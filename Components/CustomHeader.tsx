@@ -14,7 +14,7 @@ const SearchBar = () => (
                 <Ionicons style={styles.searchIcon} name='ios-search' size={20} color={Colors.medium} />
                 <TextInput style={styles.input} placeholder='Restaurant, groceries, dishes' />
             </View>
-            <Link href={'/'} asChild>
+            <Link href={'/(modal)/filter'} asChild>
                 <TouchableOpacity style={styles.optionButton}>
                     <Ionicons name='options-outline' size={20} color={Colors.primary} />
                 </TouchableOpacity>
@@ -33,7 +33,7 @@ const CustomHeader = () => {
   return (
     <SafeAreaView style={styles.safeArea}>
         <BottomSheet ref={bottomSheetRef} />
-        
+
       <View style={styles.container}>
         <TouchableOpacity onPress={openModal}>
             <Image style={styles.bike} source={require('@/assets/images/bike.png')} />
